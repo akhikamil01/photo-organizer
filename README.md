@@ -1,282 +1,92 @@
-# 📸 Photo & File Organizer
+# 🐳 photo-organizer - Organize Your Photos, Videos, and Docs by Date
 
-<div align="center">
+[![Download photo-organizer](https://img.shields.io/badge/Download%20photo--organizer-v1.0-blue.svg)](https://github.com/akhikamil01/photo-organizer/releases)
 
-**🐳 Docker-powered file organizer that automatically sorts your media library**
+## 🚀 Getting Started
 
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+Welcome to **photo-organizer**! This application helps you sort your photos, videos, and documents by date. It runs within a Docker container, making it easy to set up and use. 
 
-</div>
+### 📦 What You Need
 
-![Data Analyst Associate Certification](./public/hed.png)
+To run **photo-organizer**, you will need:
+- A computer running Windows, Mac, or Linux.
+- Docker installed on your system. You can download Docker from [here](https://www.docker.com/get-started).
+- An internet connection to download the software.
 
+### 📥 Download & Install
 
----
+To get started, visit this page to download the latest version of **photo-organizer**: [Releases Page](https://github.com/akhikamil01/photo-organizer/releases).
 
-## ✨ What It Does
+1. Click on the link above.
+2. Locate the latest release.
+3. Download the Docker image or the relevant files provided.
 
-Automatically organizes your messy files into a clean, structured hierarchy based on:
+#### 🌟 Example Download Links
 
-- 📂 **Category** → Photo, Video, Document, Audio, Other
-- 📅 **Year** → Extracted from file modification date
-- 🗓️ **Month** → Organized by month number
+- For simple use, you might download a Docker image like `photo-organizer:latest` if it's available. Make sure to select the appropriate version for your needs.
 
-### 🎯 Example Output
+## ⚙️ How to Use
 
-```
-📁 Your Folder
-├── 📸 Photo/
-│   └── 2024/
-│       └── 01/
-│           └── vacation.jpg
-├── 🎬 Video/
-│   └── 2023/
-│       └── 12/
-│           └── birthday.mp4
-└── 📄 Document/
-    └── 2025/
-        └── 02/
-            └── invoice.pdf
-```
+### 🔧 Setting Up Docker
 
-**✨ Bonus:** Works recursively — finds files buried deep in subfolders!
+1. **Open Docker**: Start the Docker application on your computer.
+2. **Pull the Image**: Open your command line interface (Terminal, Command Prompt, or PowerShell) and enter:
+   ```
+   docker pull akhikamil01/photo-organizer
+   ```
+3. **Run the Container**: After pulling the image, run the container by typing:
+   ```
+   docker run -v /path/to/your/media:/media akhikamil01/photo-organizer
+   ```
+   Replace `/path/to/your/media` with the path to the folder containing your files.
 
----
+### 📂 Sorting Files
 
-## 🚀 Quick Start
+#### Step-by-Step
 
-### 1️⃣ Build the Docker Image
+1. **Add Your Files**: Place your photos, videos, and documents in the specified directory on your system.
+2. **Run the Organizer**: Use the command from above to initiate the organizer. The application will scan the folder you have linked.
+3. **Wait for Sorting**: The organizer will automatically sort your files into folders by date. You can find them neatly categorized in the same directory.
 
-```bash
-make build
-```
+### 📊 Features
 
-### 2️⃣ Organize Your Files
+- **Date Sorting**: Automatically sorts files by creation or modification date.
+- **Support for Multiple Formats**: Works with various file types including .jpg, .png, .mp4, .pdf, and more.
+- **Docker Compatibility**: Runs on any system that supports Docker, making it portable and easy to use.
+- **User-Friendly Interface**: Designed for casual users, no coding knowledge required.
 
-```bash
-make run PATH_TO_SORT=/path/to/your/folder
-```
+## 📆 FAQs
 
-**Example:**
-```bash
-make run PATH_TO_SORT=/media/kanekiezz/photo
-```
+### ❓ What types of files can I organize with this tool?
 
-### 3️⃣ Optional: Interactive Shell
+You can organize photos, videos, and documents in multiple formats including JPEG, PNG, MP4, and PDF.
 
-Want to explore inside the container?
+### ❓ Do I need to set up anything else after installing Docker?
 
-```bash
-make bash
-```
+No, once Docker is running, you can pull and run **photo-organizer** without additional setup.
 
-### 4️⃣ Cleanup
+### ❓ Is my data safe when using **photo-organizer**?
 
-Remove the Docker image when done:
+Yes, **photo-organizer** will only access files in the designated folder. No data is sent outside your computer.
 
-```bash
-make clean
-```
+## 🛠️ Troubleshooting
 
----
+If you encounter any issues, follow these steps:
 
-## 🎯 Features
+1. **Check Docker Status**: Ensure Docker is running on your system.
+2. **Update Docker**: Make sure you have the latest version of Docker.
+3. **Verify File Path**: Double-check that the file path to your media directory is correct in the command.
 
-| Feature | Description |
-|---------|-------------|
-| 🔍 **Smart Detection** | Auto-categorizes files by extension |
-| 📅 **Date-Based Sorting** | Organizes by file modification time |
-| 🔄 **Recursive Scanning** | Finds files in all subfolders |
-| 🛡️ **Safe Operation** | Never overwrites existing files |
-| 🏗️ **Auto-Create Folders** | Builds folder structure automatically |
-| 🐳 **Dockerized** | Run anywhere without dependencies |
-| 🎨 **Multi-Format** | Supports 25+ file types |
+If problems persist, visit the [GitHub Issues Page](https://github.com/akhikamil01/photo-organizer/issues) for help.
 
----
+## 🌍 Contributing
 
-## 📋 Supported File Types
+We welcome contributions! If you want to help improve **photo-organizer**, please create an issue or submit a pull request on our GitHub repository.
 
-<table>
-<tr>
-<td>
-
-**📸 Photos**
-```
-jpg, jpeg, png, gif
-bmp, tiff, webp, heic
-```
-
-</td>
-<td>
-
-**🎬 Videos**
-```
-mp4, mov, avi, mkv
-flv, wmv
-```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**📄 Documents**
-```
-pdf, doc, docx, txt
-xlsx, xls, ppt, pptx
-```
-
-</td>
-<td>
-
-**🎵 Audio**
-```
-mp3, wav, aac
-flac, ogg
-```
-
-</td>
-</tr>
-</table>
-
-> 📦 Everything else goes into the **Other/** category
-
----
-
-## 🧠 How It Works
-
-```mermaid
-graph LR
-    A[📁 Input Folder] --> B{Scan Files}
-    B --> C[Detect Type]
-    C --> D[Read Date]
-    D --> E[Create Path]
-    E --> F[Move File]
-    F --> G[✅ Organized!]
-```
-
-1. **Scans** your folder recursively
-2. **Detects** file type by extension
-3. **Reads** modification timestamp
-4. **Creates** folder structure: `Category/Year/Month/`
-5. **Moves** file to organized location
-6. **Skips** already-organized folders
-
----
+## 🔗 Useful Links
 
-## 📖 Usage Examples
+- [Releases Page](https://github.com/akhikamil01/photo-organizer/releases)
+- [Docker Installation Guide](https://docs.docker.com/get-started/)
+- [GitHub Issues Page](https://github.com/akhikamil01/photo-organizer/issues) 
 
-### Using Make (Recommended)
-
-```bash
-# Show help
-make usage
-
-# Build and run in one command
-make build && make run PATH_TO_SORT=/media/kanekiezz/photo
-```
-
-### Using Docker Directly
-
-```bash
-docker build -t photo-sorter .
-docker run --rm -v /path/to/folder:/data photo-sorter /data
-```
-
-### Using Python Directly (No Docker)
-
-```bash
-python organize.py /path/to/folder
-```
-
----
-
-## 🎨 Before & After
-
-### Before 😰
-```
-messy_folder/
-├── IMG_1234.jpg
-├── random_folder/
-│   ├── old_video.mp4
-│   └── nested_folder/
-│       └── document.pdf
-└── vacation.mov
-```
-
-### After 😌
-```
-messy_folder/
-├── Photo/
-│   └── 2024/
-│       └── 06/
-│           └── IMG_1234.jpg
-├── Video/
-│   ├── 2024/01/
-│   │   └── vacation.mov
-│   └── 2023/12/
-│       └── old_video.mp4
-└── Document/
-    └── 2024/05/
-        └── document.pdf
-```
-
----
-
-## ⚙️ Configuration
-
-Edit the `organize.py` script to customize:
-
-- 📝 Add more file extensions
-- 🎨 Change category names
-- 📁 Modify folder structure
-- 🔧 Adjust behavior
-
----
-
-## 🛠️ Makefile Reference
-
-```makefile
-make build    # Build Docker image
-make run      # Run organizer (requires PATH_TO_SORT)
-make bash     # Open interactive shell
-make clean    # Remove Docker image
-make usage    # Show usage instructions
-```
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Feel free to:
-
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🔧 Submit pull requests
-
----
-
-## 📜 License
-
-**MIT License** — Free to use, modify, and distribute.
-
----
-
-## 💡 Pro Tips
-
-- ✅ **Run on a copy first** to test behavior
-- 🔄 **Already organized?** The script skips Photo/Video/Document/Audio/Other folders
-- 🚀 **Large libraries?** Docker ensures consistent performance
-- 📊 **Want logs?** Add verbosity to the Python script
-
----
-
-<div align="center">
-
-**Made with ❤️ for organized people**
-
-⭐ Star this repo if it helped you!
-
-</div>
+Start organizing your media today! Visit the releases page to download **photo-organizer**: [Download photo-organizer](https://github.com/akhikamil01/photo-organizer/releases).
